@@ -53,7 +53,6 @@ public class CompanyControllers {
 	
 	@GetMapping("/buscarPorCodigo/{codigo}")
 	public ResponseEntity<?> buscarCompanyPorCodigo(@PathVariable String codigo){
-		System.err.println("Prueba: "+ codigo);
 		try {
 			return ResponseEntity.ok(companyService.buscarPorCodigo(codigo));
 		} catch (Exception e) {

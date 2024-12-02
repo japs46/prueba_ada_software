@@ -38,7 +38,6 @@ public class CompanyServiceImpl implements CompanyService{
 
 	@Override
 	public Company buscarPorCodigo(String codigo) {
-		System.err.println("prueba1");
 		return companyRepository.findByCodigoCompany(codigo).orElseThrow();
 	}
 
